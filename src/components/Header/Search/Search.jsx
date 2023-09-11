@@ -1,22 +1,35 @@
 import "./Search.scss";
 import { MdClose } from "react-icons/md";
 import prod from "../../../assets/products/earbuds-prod-2.webp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useFetch from "../../../hooks/useFetch";
 
 const Search = ({ setShowSearch }) => {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
+  const handleOnChange = (e) => {
+    setQuery(e.target.value);
+  };
 
-  const handleOnChange=(e)=>{
-      setQuery(e.target.value)
-  }
+  const [debouncedQuery, setDebouncedQuery] = useState(""); // Store the debounced query
 
-  let {data}=useFetch(`/api/products?populate=*&[filters][title][$contains]=${query}`)
+  useEffect(() => {
+    const debounceTimeout = setTimeout(() => {
+      setDebouncedQuery(query); // Update the debounced query after the delay
+    }, 500); // Adjust the delay time as needed 
 
-  if(!query.length){
-      data=null
+    return () => {
+      clearTimeout(debounceTimeout); // Clear the timeout if the user continues typing
+    };
+  }, [query]);
+
+  let { data } = useFetch(
+    `/api/products?populate=*&[filters][title][$contains]=${debouncedQuery}`
+  ); // Use the debounced query for the API request
+
+  if (!debouncedQuery.length) {
+    data = null;
   }
 
   return (
@@ -25,7 +38,7 @@ const Search = ({ setShowSearch }) => {
         <input 
         type="text" 
         autoFocus 
-        placeholder="search for products" 
+        placeholder="Search For Products" 
         value={query}
         onChange={handleOnChange}
         />
