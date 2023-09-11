@@ -27,7 +27,6 @@ const Home = () => {
     fetchDataFromApi("/api/categories?populate=*").then((response) =>{
       // response.data.map((item)=>console.log(item))
       setCategories(response);
-      console.log("cat",response)
   
     }
     );
