@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# E-Commerce Website 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is an E-Commerce website built with React.js, integrated with Stripe for secure payments, and powered by Strapi for efficient content management. The website offers a range of essential e-commerce functionalities, including a shopping cart, seamless payment processing, a robust search functionality, and a user-friendly product catalog.
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+- **Shopping Cart**: Users can add products to their cart, review the items, and proceed to checkout.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Stripe Integration**: Secure payment processing is handled through Stripe, providing users with a trusted and convenient payment experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Content Management with Strapi**: Strapi serves as the content management system, allowing easy product catalog updates and content customization.
 
-### `npm test`
+- **Robust Search Functionality**: Users can quickly find products using a powerful search feature, making it easy to discover and purchase desired items.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **User-Friendly Product Catalog**: The website offers an intuitive product catalog with detailed product descriptions, images, and pricing information.
 
-### `npm run build`
+## Tools/Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js: The front-end framework for building the user interface.
+- Strapi: The headless CMS used for content management.
+- Stripe: The payment gateway integrated for secure transactions.
+- Other technologies and libraries as needed for various functionalities.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Live Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Check out the live demo of the Web App https://gstore-react-app.netlify.app/
